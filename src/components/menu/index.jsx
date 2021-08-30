@@ -1,10 +1,12 @@
 import React from 'react';
 import './style.scss';
 
-const Menu = (props) => {
+const Menu = () => {
     return (
         <div className="menu" onClick={handleClick}>
-            <div className='menu__line'>{props.textTask}</div>
+            <div className='menu__line'></div>
+            <div className='menu__line'></div>
+            <div className='menu__line'></div>
         </div>
     )
 };
