@@ -1,47 +1,51 @@
-import React, {useState} from 'react';
-import {Card, Typography, CardContent, CardActions, IconButton, Box, Input} from "@material-ui/core";
+import React, {useState, useEffect} from 'react';
+import {FormControlLabel, Card, Typography, CardContent, CardActions, IconButton, Box, Input, Checkbox} from "@material-ui/core";
 import CloseIcon from '@material-ui/icons/Close';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
-import Item from './Item';
+// import ListItem from './ListItem';
 import './style.scss';
 
 export default function SimpleCard() {
-    const [task, setNewTask] = useState({
-        items: [
+    const [tasks, addTask] = useState([
             {
-                text: 'do todo',
-                id: 1
+                text: 'text',
+                isChecked: false,
+                id: Date.now()
             }
         ]
-    });
-    const [textTask, setTextTask] = useState('12');
-
+    );
+    const [text, setText] = useState('');
     const handleChange = (e) => {
-        setTextTask(e.target.value);
-        console.log('handleChange', textTask);
+        setText(e.target.value);
     };
-
-    const handleSubmit = (e) => {
+    const handleSubmit = (e)=>{
         e.preventDefault();
-        const newItem = [{
-            text: textTask.toString(),
+        if(text.length === 0){
+            return;
+        }
+        const newItem = {
+            text: text,
+            isChecked: false,
             id: Date.now()
-        }];
-        console.log('handleSubmit ', task);
-        // setNewTask({items: task.items.concat(newItem)});
-        const temp = [...task.items, ...newItem];
-        setNewTask({task: temp}
-            );
-        // setNewTask([
-        //     ...task.items,
-        //     {items: newItem}
-        // ]);
-        console.log('handleSubmit ', task);
-    };
+        }
+        addTask([
+            ...tasks,
+            ...[{
+                text: text,
+                isChecked: false,
+                id: Date.now()
+            }]
+        ])
+        console.log(tasks);
+    }
+
+    const handleCheck = (e)=>{
+        console.log(e)
+    }
     return (
         <form onSubmit={handleSubmit}>
             <Card className={"card"}>
-                <CardContent className={"card__wrapper"}>
+                <CardContent className={"card__wrapper"} id="container">
                     <Box className={"card__box"}>
                         <Typography variant="h5" component="h2">
                             Title task
@@ -51,25 +55,33 @@ export default function SimpleCard() {
                         </IconButton>
                     </Box>
                     <Box>
-                        {/*<Item props={task.items}/>*/}
-                        <ul className="12z">
-                            {/*{task.items.map(item => {*/}
-                            {/*    <li key={item.id}>{item.text}</li>*/}
-                            {/*})}*/}
-                        </ul>
+                        <FormControlLabel control={
+                            <Checkbox/>}
+                                          label="check123"
+                        />
                     </Box>
-                    <CardActions className={"card__actions"}>
-                        <Input placeholder="enter text of task"
-                               onChange={handleChange}
-                               value={task.text}/>
-                        {/*<IconButton size="small">*/}
+                    {tasks.map(item => {
+                        return(
+                            <Box key={item.id}>
+                                <FormControlLabel className="ul22" control={
+                                    <Checkbox onChange={item => !item.isChecked} checked={item.isChecked}/>}
+                                                  label={item.text}
+                                />
+                            </Box>
+                        )
+                    })}
+                    {/* <ListItem props={tasks}/> */}
+                    <CardActions className={"card__actions"} id="cardActions">
+                        <Input id="input" placeholder="enter text of task"
+                               onChange={handleChange} value={text}
+                        />
                         <button>
                             <AddCircleIcon></AddCircleIcon>
                         </button>
-                        {/*</IconButton>*/}
                     </CardActions>
+
                 </CardContent>
             </Card>
         </form>
-    );
+    )
 }
