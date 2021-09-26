@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import {AppBar,Toolbar, IconButton, Typography, Button} from "@material-ui/core";
+import {AppBar,Toolbar, IconButton, Typography, Button, Link} from "@material-ui/core";
 import MenuIcon from '@material-ui/icons/Menu';
 import './style.scss';
 
@@ -27,6 +27,9 @@ export default function Header() {
                     <Typography variant="h6" className={classes.title}>
                         МаксTracker
                     </Typography>
+                    <Link href="https://ru.reactjs.org/" color="second">
+                        <Typography variant="h6">React Docs</Typography>
+                    </Link>
                     <Button color="inherit">Login</Button>
                 </Toolbar>
             </AppBar>

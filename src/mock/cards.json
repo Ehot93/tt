@@ -1,16 +1,14 @@
 {
-    "1":{
-        "title": "first task",
-        "taskList": [
-            {
-                "text":"create new repos and init git"
-            },
-            {
-                "text":"create react app"
-            },
-            {
-                "text":"add dependences"
-            }
-        ]
-    }
+    "cards": [
+        {
+            "text": "some text",
+            "isChecked": false,
+            "id": 1
+        },
+        {
+            "text": "lorem ipsum",
+            "isChecked": true,
+            "id": 2
+        }
+    ]
 }

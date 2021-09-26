@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import Footer from "./components/footer";
 import Header from "./components/header";
 import Card from "./components/Card";
 import Layout from "./components/Layout";
@@ -13,9 +12,7 @@ function App() {
         <Header/>
         <Layout>
           <Card title="first task"/>
-        </Layout> 
-        <Footer/>
-
+        </Layout>
     </div>
   );
 }

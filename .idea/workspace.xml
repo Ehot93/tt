@@ -3,7 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="37347334-4dc1-4dac-b020-7a02a82465d1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Card/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mock/cards.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/mock/cards.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,15 +44,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\web-projects\torodoro\src\components\footer" />
-      <recent name="C:\web-projects\torodoro\src\components\header" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\web-projects\torodoro\src\components\Card\Item" />
       <recent name="C:\web-projects\torodoro\src\components\sidebar" />
       <recent name="C:\web-projects\torodoro\src\components\menu" />
       <recent name="C:\web-projects\torodoro\src\components\footer" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\web-projects\torodoro\src\components\footer" />
+      <recent name="C:\web-projects\torodoro\src\components\header" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -84,7 +90,13 @@
       <workItem from="1631383801459" duration="4145000" />
       <workItem from="1631470064786" duration="264000" />
       <workItem from="1631498723163" duration="600000" />
-      <workItem from="1631545218012" duration="172000" />
+      <workItem from="1631545218012" duration="2212000" />
+      <workItem from="1631898377102" duration="1205000" />
+      <workItem from="1631964241382" duration="861000" />
+      <workItem from="1632067030257" duration="3660000" />
+      <workItem from="1632244337024" duration="630000" />
+      <workItem from="1632674737779" duration="11000" />
+      <workItem from="1632679026477" duration="2416000" />
     </task>
     <servers />
   </component>
@@ -100,34 +112,34 @@
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="2012" y="92" width="1736" height="866" key="DiffContextDialog/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1631372531616" />
-    <state width="1877" height="186" key="GridCell.Tab.0.bottom" timestamp="1631470386447">
-      <screen x="1920" y="0" width="1920" height="1050" />
+    <state width="1877" height="186" key="GridCell.Tab.0.bottom" timestamp="1632680123898">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="248" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1630411582113" />
-    <state width="1877" height="186" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1631470386447" />
-    <state width="1877" height="186" key="GridCell.Tab.0.center" timestamp="1631470386447">
-      <screen x="1920" y="0" width="1920" height="1050" />
+    <state width="1877" height="186" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1632680123898" />
+    <state width="1877" height="186" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1632079311310" />
+    <state width="1877" height="186" key="GridCell.Tab.0.center" timestamp="1632680123898">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="248" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1630411582113" />
-    <state width="1877" height="186" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1631470386447" />
-    <state width="1877" height="186" key="GridCell.Tab.0.left" timestamp="1631470386447">
-      <screen x="1920" y="0" width="1920" height="1050" />
+    <state width="1877" height="186" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1632680123898" />
+    <state width="1877" height="186" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1632079311310" />
+    <state width="1877" height="186" key="GridCell.Tab.0.left" timestamp="1632680123898">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="248" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1630411582113" />
-    <state width="1877" height="186" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1631470386447" />
-    <state width="1877" height="186" key="GridCell.Tab.0.right" timestamp="1631470386447">
-      <screen x="1920" y="0" width="1920" height="1050" />
+    <state width="1877" height="186" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1632680123898" />
+    <state width="1877" height="186" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1632079311310" />
+    <state width="1877" height="186" key="GridCell.Tab.0.right" timestamp="1632680123898">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="248" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1630411582113" />
-    <state width="1877" height="186" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1631470386447" />
+    <state width="1877" height="186" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1632680123898" />
+    <state width="1877" height="186" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1632079311310" />
     <state x="461" y="167" key="SettingsEditor" timestamp="1629826960284">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="167" key="SettingsEditor/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1629826960284" />
-    <state x="2577" y="257" width="606" height="536" key="find.popup" timestamp="1630256575966">
-      <screen x="1920" y="0" width="1920" height="1050" />
+    <state x="330" y="113" width="1178" height="788" key="find.popup" timestamp="1632679187530">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="657" y="257" width="606" height="536" key="find.popup/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1629819892772" />
-    <state x="2577" y="257" width="606" height="536" key="find.popup/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1630256575966" />
+    <state x="330" y="113" width="1178" height="788" key="find.popup/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1632679187530" />
+    <state x="2429" y="178" width="975" height="673" key="find.popup/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1631964344429" />
   </component>
 </project>
