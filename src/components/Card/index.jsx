@@ -8,7 +8,7 @@ export default function SimpleCard() {
     const [tasks, setTask] = useState([
             {
                 text: 'text',
-                isChecked: false,
+                isChecked: true,
                 id: Date.now()
             }
         ]
@@ -22,11 +22,11 @@ export default function SimpleCard() {
         if(text.length === 0){
             return;
         }
-        const newItem = {
-            text: text,
-            isChecked: false,
-            id: Date.now()
-        };
+        // const newItem = {
+        //     text: text,
+        //     isChecked: true,
+        //     id: Date.now()
+        // };
         setTask([
             ...tasks,
             ...[{
@@ -38,14 +38,16 @@ export default function SimpleCard() {
         // console.log(tasks);
     };
 
-    const handleCheck = (item) => {
-        // console.log('item',item);
+    const handleCheck = (e) => {
+        e.preventDefault();
+        console.log('item',e.target.checked);
+        e.target.checked = !e.target.checked;
         const container = document.getElementById('container');
         const items = container.querySelectorAll('.card__item');
-        console.log('items:', items);
+        // console.log('items:', items);
         let ara = [];
         ara.push(...items);
-        console.log('ara',ara);
+        // console.log('ara',ara);
         // return (item.isChecked = !item.isChecked);
     };
     return (
@@ -56,7 +58,7 @@ export default function SimpleCard() {
                         <Typography variant="h5" component="h2">
                             Title task
                         </Typography>
-                        <IconButton edge="start" color="inherit" aria-label="close" size="small">
+                        <IconButton edge="start" aria-label="close" size="small">
                             <CloseIcon></CloseIcon>
                         </IconButton>
                     </div>
@@ -78,7 +80,7 @@ export default function SimpleCard() {
                     })}
                     {/* <ListItem props={tasks}/> */}
                     <CardActions className={"card__actions"} id="cardActions">
-                        <Input id="input" placeholder="enter text of task"
+                        <Input id="inputText" placeholder="enter text of task"
                                onChange={handleChange} value={text}
                         />
                         <button>

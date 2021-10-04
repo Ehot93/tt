@@ -27,7 +27,7 @@ export default function Header() {
                     <Typography variant="h6" className={classes.title}>
                         МаксTracker
                     </Typography>
-                    <Link href="https://ru.reactjs.org/" color="second">
+                    <Link href="https://ru.reactjs.org/">
                         <Typography variant="h6">React Docs</Typography>
                     </Link>
                     <Button color="inherit">Login</Button>
